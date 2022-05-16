@@ -34,10 +34,10 @@ public class Quiz {
 
         //Task 2: Check each answer - For each correct answer, add 5 points to the score. 
 
-        if (answer1.equals("c")) score += 5;
-        if (answer2.equals("a")) score += 5;
-        if (answer3.equals("d")) score += 5;
-        if (answer4.equals("a") || answer4.equals("b")) score += 5;
+        if (answer1.equalsIgnoreCase("c")) score += 5;
+        if (answer2.equalsequalsIgnoreCase("a")) score += 5;
+        if (answer3.equalsequalsIgnoreCase("d")) score += 5;
+        if (answer4.equalsequalsIgnoreCase("a") || answer4.equals("b")) score += 5;
         
         System.out.println("Your final score is: " + score + "/20");
 

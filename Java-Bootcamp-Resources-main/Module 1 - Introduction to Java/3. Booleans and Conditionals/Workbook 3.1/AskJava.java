@@ -23,7 +23,7 @@ public class AskJava {
         // System.out.println("Java: " + "<compare request and purchase>" + "\n");
 
         //comparison here
-        System.out.println("Java: " + (request.equals(purchase)) + "\n");
+        System.out.println("Java: " + (request.equalsIgnoreCase(purchase)) + "\n");
 
         int space = 9;
         int guests = 8;

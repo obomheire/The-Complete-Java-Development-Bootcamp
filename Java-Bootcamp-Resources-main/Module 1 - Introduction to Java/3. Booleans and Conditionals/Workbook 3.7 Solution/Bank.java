@@ -6,7 +6,7 @@ public class Bank {
         System.out.println("\n****ROYAL BANK OF JAVA****");
         System.out.println("Are you here to get a mortgage? (yes or no)");
         String decision = scan.nextLine();
-        if (decision.equals("yes")) {
+        if (decision.equalsIgnoreCase("yes")) {
             System.out.println("\nGreat! In one line" +
             "\nHow much money do you have in your savings?" +
             "\nAnd, how much do you owe in credit card debt?");
