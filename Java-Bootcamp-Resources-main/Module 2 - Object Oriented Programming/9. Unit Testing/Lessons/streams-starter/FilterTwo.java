@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class FilterTwo {
 
@@ -12,16 +13,18 @@ public class FilterTwo {
         prices.add(15.99);
 
         ArrayList<Double> lowPrices = new ArrayList<Double>();
+
+        lowPrices.addAll(prices.stream().filter(price -> price < 5).collect(Collectors.toList()));
     
-        filterLowPrices(lowPrices);
+        // filterLowPrices(lowPrices);
     }
 
-    public static void filterLowPrices(ArrayList<Double> lowPrices) {
-        for (int i = 0; i < prices.size(); i++) {
-            if (prices.get(i) < 5) {
-                lowPrices.add(prices.get(i));
-            }
-        }
-    }
+    // public static void filterLowPrices(ArrayList<Double> lowPrices) {
+    //     for (int i = 0; i < prices.size(); i++) {
+    //         if (prices.get(i) < 5) {
+    //             lowPrices.add(prices.get(i));
+    //         }
+    //     }
+    // }
 
 }
