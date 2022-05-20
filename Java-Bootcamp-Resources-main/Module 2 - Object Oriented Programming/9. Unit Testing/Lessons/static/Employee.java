@@ -6,6 +6,7 @@ public class Employee {
     public Employee(String name, String position) {
         this.name = name;
         this.position = position;
+        hiredCount++;
     }
   
     public Employee(Employee source) {
